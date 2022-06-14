@@ -1,0 +1,81 @@
+*{
+ margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+background-color: #e6e6e6;
+}
+
+.header, .main, .footer{
+
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header nav{
+background-color: #528fd5;
+
+}
+
+.header nav ul{
+    list-style: none; /*desaparecen los puntos de la lista*/
+    overflow: hidden;/* esconde el float-left para que no se borre el background*/
+}
+
+.header nav ul li{
+    float: left; /*coloca un elemento al lado del otro*/
+}
+
+.header nav ul li a{
+    padding: 10px 20px; /*le da espacio a las palabras*/
+   color: white;
+display: block; /*para que respete los paddin y widht, hight*/
+text-decoration: none; /*saca los decorados como el subrayado*/
+
+}
+
+.header nav ul li a:hover{
+background-color: #75acec;
+}
+
+.articles{ /*recortamos el tamaño que ocupa la caja de los ariculos*/
+
+    width: 68.5%;
+    float: left;
+    margin-right: 1.5%;
+
+}
+.articles article{
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px; /*el de arriba empuja al elemento de abajo*/
+    box-shadow: 5px 10px 8px #888888; /*margen de color a las cajas */
+
+
+}
+
+
+.aside{
+    width: 30%; /*tamaño de la caja*/
+    background-color: #ff8000; /*color a la caja*/
+    padding: 20px;
+    height: 75vh;
+    box-shadow:  5px 10px 8px #888888;
+    float: left; /* que el aside flote al costado para esto debe flotar el resto de los articulos*/
+
+}
+.aside h3,
+.aside p{
+    margin: 10px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    clear: both;/* clear limpia el float-left  el footer vuelve para abajo*/
+text-align: center; /* centrar las palabras*/
+padding: 10px 0; /*footer mas ancho*/
+}
+
+
